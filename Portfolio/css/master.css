@@ -1,0 +1,180 @@
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+    margin-bottom: 2em;
+    font-family: 'Roboto Slab', serif; /* Police des titres */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+section {
+    background-color: #ffffff;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.5em;
+}
+.about-content img {
+    border-radius: 90%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 2em;
+}
+
+.about-content .linkedin-logo {
+    border-radius: 0; /* Pas de bord arrondi */
+    width: 30px; /* Taille plus petite */
+    height: 30px; /* Taille plus petite */
+    object-fit: contain; /* Pour s'assurer que le logo est bien visible */
+    margin-right: 2em;
+    vertical-align: middle; /* Pour aligner l'image avec le texte */
+}
+/* Style pour les images de petite taille */
+.image-placeholder img {
+    width: 300px; /* Ajustez la taille selon vos besoins */
+    height: auto; /* Maintient le ratio de l'image */
+    display: block; /* Supprime l'espace en dessous de l'image */
+    margin: 0 auto; /* Centre l'image horizontalement */
+}
+/* Style pour aligner les images horizontalement */
+.image-placeholder {
+    display: flex;
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 10px; /* Espace entre les images */
+}
+  /* Style global pour aligner les projets */
+  #projets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Permet de répartir les projets avec un espace autour */
+    align-items: center; /* Centre les éléments verticalement */
+    gap: 2em; /* Espace entre les projets */
+}
+
+.projet1, .projet2 {
+    text-align: center; /* Centre le texte à l'intérieur de chaque projet */
+    flex: 1 1 30%; /* Permet à chaque projet de prendre jusqu'à 30% de la largeur disponible */
+    max-width: 30%; /* Limite la taille maximale des projets */
+    box-sizing: border-box; /* Assure que le padding n'affecte pas la largeur */
+    padding: 1em; /* Ajoute un padding interne pour espacer le contenu des bordures */
+    background-color: white; /* Fond blanc pour les projets */
+    border-radius: 8px; /* Arrondit les coins */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre légère */
+}
+
+.projet1 img, .projet2 img {
+    width: 100%; /* L'image occupe toute la largeur disponible */
+    height: auto; /* Maintient le ratio de l'image */
+    border-radius: 8px 8px 0 0; /* Arrondit les coins supérieurs */
+}
+
+.projet1 h3, .projet2 h3 {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+}
+
+/* Ajout d'un effet au survol */
+.projet1:hover, .projet2:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour rendre les titres et images cliquables */
+.projet1 a, .projet2 a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.about-content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+.work-experience, .education-experience, .language-experience {
+    margin-bottom: 1.5em;
+}
+
+.work-experience h3, .education-experience h3, .language-experience h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.work-experience p, .education-experience p, .language-experience p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.75em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #ff6f61;
+}
+footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9em;
+    margin-top: 2em;
+}
+
+footer p {
+    margin: 0;
+}
+/* Style pour le bouton de retour */
+button {
+    background-color: #2c3e50; /* Couleur de fond du bouton (un bleu foncé élégant) */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprimer les bordures par défaut */
+    padding: 10px 20px; /* Espacement interne du bouton */
+    font-size: 16px; /* Taille de la police */
+    border-radius: 5px; /* Bords arrondis pour un effet plus doux */
+    cursor: pointer; /* Changer le curseur au survol */
+    transition: background-color 0.3s ease; /* Ajouter une transition pour l'effet de survol */
+}
+

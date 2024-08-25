@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet EPF Locker</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    <header>
+        <h1>Projet EPF Locker</h1>
+        <p>Construction d'un casier connecté pour le prêt de matériel et le stockage sécurisé</p>
+    </header>
+
+    <main>
+        <!-- Bouton pour revenir à la page principale -->
+        <button onclick="window.location.href='index.html'">Retour au Portfolio</button>
+
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>
+                Dans le cadre du module "Projet Challenge", nous avons formé une équipe de 10 étudiants pour réaliser le projet "EPF Locker" lancé le 17 mars 2023 et proposé par M. Amalric de Mauleon. 
+            </p>
+        </section>
+
+        <section id="objectifs">
+            <h2>Objectifs</h2>
+            <p>
+                Les principaux objectifs du projet EPF Locker sont :
+                <ul>
+                    <li>Optimiser la gestion du prêt de matériel informatique.</li>
+                    <li>Offrir une solution de recharge pratique pour les ordinateurs portables.</li>
+                    <li>Améliorer l'expérience utilisateur grâce à une interface intuitive.</li>
+                    <li>Mettre en place un système de verrouillage sécurisé.</li>
+                    <li>Assurer la disponibilité du matériel informatique en temps réel.</li>
+                </ul>
+            </p>
+
+            <div class="image-placeholder">
+                <img src="./images/epf_locker.jpg" alt="EPF Locker">
+            </div>
+        </section>
+
+        <section id="outils">
+            <h2>Utilisation des outils et méthodes</h2>
+            <p>
+                <strong>Connexion SSH et MobaXterm :</strong> La connexion SSH nous a permis de modifier les fichiers de la carte à distance depuis nos ordinateurs via l’invite de commande. Nous avons ainsi effectué les modifications de notre carte Raspberry à partir du terminal de nos ordinateurs, ce qui a facilité notre travail sur cette dernière.
+            </p>
+            <p>
+                <strong>Partage du code avec Github :</strong> Tout au long du projet, l’utilisation de Github nous a permis de travailler en simultané sur le code de notre application Web. Nous avons créé un dépôt Github nommé « EPF_Locker2 » qui contient l’ensemble de notre application Web.
+            </p>
+            <div class="image-placeholder">
+                <img src="./images/github.png" alt="Github">
+            </div>
+        </section>
+
+        <section id="fonctionnement">
+            <h2>Fonctionnement logiciel</h2>
+            <p>
+                <strong>Réglage de la carte :</strong> Après avoir mis en place notre système d’exploitation, nous avons pu mettre en place des réglages nécessaires pour le bon fonctionnement de notre système. Pour pouvoir effectuer l’authentification avec un compte Microsoft 365, il fallait que notre site soit en ligne.
+            </p>
+            <p>
+                <strong>Fixation de l’IP :</strong> L’adresse IP est un numéro qui identifie un périphérique relié à un réseau informatique. Nous avons dû fixer l’IP de notre carte pour obtenir le bon routage vers notre application Web.
+            </p>
+            <p>
+                <strong>Mise en place du serveur Apache :</strong> Notre choix de conception d’une application Web pour contrôler l’EPFLocker nous a amené à mettre en place un serveur Web Apache pour mettre en place les fonctionnalités suivantes : serveur Web et hébergeur de site Web avec la prise en compte des protocoles http et HTTPS, exécution de requête PHP côté serveur.
+            </p>
+            <div class="image-placeholder">
+                <img src="./images/apache.png" alt="Serveur Apache">
+            </div>
+        </section>
+
+        <section id="conception">
+            <h2>Conception</h2>
+            <p>
+                La conception physique du projet "EPF Locker" a nécessité plusieurs étapes de montage et d'assemblage. Nous avons dû assembler les colonnes de casiers, fixer les serrures, installer les ventilateurs et les prises, et gérer le câblage pour assurer la sécurité et l'organisation des câbles.
+            </p>
+            <div class="image-placeholder">
+                <img src="./images/montage.jpg" alt="Montage des casiers">
+                <img src="./images/serrure.jpg" alt="Fixation des serrures">
+                <img src="./images/ventilateur.jpg" alt="Installation des ventilateurs">
+            </div>
+        </section>
+
+        <section id="gestion-cables">
+            <h2>Gestion des câbles</h2>
+            <p>
+                Une fois les casiers complètement assemblés, nous avions un certain nombre de câbles et de fils électriques apparents. Nous avons donc effectué un câble management afin d’assurer la sécurité, l’organisation et l’esthétisme des casiers. La mise en place d’un tel dispositif permet de sécuriser les câbles en cas d’actes malveillants, et également d’empêcher les courts-circuits ou la propagation du courant sur l’acier des casiers qui est conducteur.
+            </p>
+            <div class="image-placeholder">
+                <img src="./images/cable.jpg" alt="Gestion des câbles">
+            </div>
+        </section>
+
+        <section id="alimentation">
+            <h2>Alimentation électrique</h2>
+            <p>
+                Afin de fournir une alimentation électrique et un accès à internet à nos casiers, nous avons branché deux rallonges et un câble Ethernet au niveau de la porte d’entrée de la salle K04. Nous avons ensuite tiré ces câbles dans le faux plafond jusqu’aux casiers. L’onduleur vient se brancher directement sur une des rallonges, l’autre est dénudée et fixée dans le répartiteur pour alimenter les prises électriques des casiers. Le câble Ethernet est relié au port de la carte Raspberry.
+            </p>
+            <div class="image-placeholder">
+                <img src="./images/alimentation.jpg" alt="Alimentation électrique">
+            </div>
+        </section>
+
+        <section id="conclusion">
+            <h2>Conclusion</h2>
+            <p>
+                En conclusion, le projet "EPF Locker" est une initiative rentable sur une période de 8 ans. Les analyses de marché, de production et de finances confirment que ce projet est bien positionné pour devenir un acteur clé sur le marché des véhicules urbains électriques en France, en Espagne et en Italie.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
